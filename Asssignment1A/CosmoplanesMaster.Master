@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CosmoplanesMaster.master.cs" Inherits="Asssignment1A.CosmoplanesMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+    <link href="Content/normalize.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <title>Cosmoplanes</title>
+    <asp:ContentPlaceHolder ID="CPHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+    <form id="form1" runat="server" class="container">
+
+        
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="/">
+                <img src="Images/logo.png" width="75" height="75" class="d-inline-block align-text-top" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Cosmoplanes <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Timeline <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contents
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left bg-light" style="width:1000px;" aria-labelledby="navbarDropdown">
+                            <div class="container-xl">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <a class="dropdown-item" href="#">
+                                            <h3>Gallery</h3>
+                                        </a>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">Photo Collage</a></li>
+                                            <li><a class="dropdown-item" href="#">Photos</a></li>
+                                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                                            <li><a class="dropdown-item" href="#">Audios</a></li>
+                                            <li><a class="dropdown-item" href="#">Scrapebooks</a></li>
+                                            <li><a class="dropdown-item" href="#">Files</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <a class="dropdown-item" href="#">
+                                            <h3>Blogs</h3>
+                                        </a>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">Blog Search Result</a></li>
+                                            <li><a class="dropdown-item" href="#">Edit Blogs</a></li>
+                                            <li><a class="dropdown-item" href="#">Most Popular Blogs</a></li>
+                                            <li><a class="dropdown-item" href="#">Post Blogs</a></li>
+                                            <li><a class="dropdown-item" href="#">Newest Blogs</a></li>
+                                            <li><a class="dropdown-item" href="#">Top Rated Blogs</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <a class="dropdown-item" href="#">
+                                            <h3>Store</h3>
+                                        </a>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                            <li><a class="dropdown-item" href="#">Hand Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Beauty</a></li>
+                                            <li><a class="dropdown-item" href="#">Unlock Cell Phones</a></li>
+                                            <li><a class="dropdown-item" href="#">Vitamnins</a></li>
+                                            <li><a class="dropdown-item" href="#">Medical Supply</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <a class="dropdown-item" href="#">
+                                            <h3>Articles</h3>
+                                        </a>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">Articles Home</a></li>
+                                            <li><a class="dropdown-item" href="#">Post Article</a></li>
+                                        </ul>
+                                        <a class="dropdown-item" href="#">
+                                            <h3>Classified & Auction</h3>
+                                        </a>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="#">Market Place</a></li>
+                                            <li><a class="dropdown-item" href="#">Post Classified</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Survey <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="WebsiteProblems.aspx">Old Website Problems <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+                    </li>
+                   
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+
+                    <button class="btn btn-success my-2 my-sm-0" type="button">Login</button>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Register</button>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="bg-light">
+            <asp:ContentPlaceHolder ID="CPMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="bg-light">
+            <a href="/terms">Terms Of Service</a>
+            Copyright © Cosmoplanes. All rights reserved.
+            <a href="/privacy">Privacy Policy</a>
+        </footer>
+    </form>
+
+</body>
+</html>
+<style type="text/css">
+    body {
+        background-color: lightskyblue;
+    }
+
+    carousel-slide {
+        height: 500px;
+        width: 400px;
+    }
+</style>
